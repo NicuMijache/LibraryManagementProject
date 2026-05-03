@@ -1,4 +1,4 @@
-import { Loan, LoanCreateDto } from '../types';
+import type { Loan, LoanCreateDto } from '../types';
 import apiClient from './client';
 
 export const getLoans = () => apiClient.get<Loan[]>('/loans').then(r => r.data);

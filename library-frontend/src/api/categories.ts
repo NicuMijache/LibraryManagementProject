@@ -1,4 +1,4 @@
-import { Category, CategoryCreateUpdateDto } from '../types';
+import type { Category, CategoryCreateUpdateDto } from '../types';
 import apiClient from './client';
 
 export const getCategories = () => apiClient.get<Category[]>('/categories').then(r => r.data);

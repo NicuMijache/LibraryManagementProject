@@ -1,4 +1,4 @@
-import { Author, AuthorCreateUpdateDto } from '../types';
+import type { Author, AuthorCreateUpdateDto } from '../types';
 import apiClient from './client';
 
 export const getAuthors = () => apiClient.get<Author[]>('/authors').then(r => r.data);

@@ -1,4 +1,4 @@
-import { Book, BookCreateUpdateDto } from '../types';
+import type { Book, BookCreateUpdateDto } from '../types';
 import apiClient from './client';
 
 export const getBooks = () => apiClient.get<Book[]>('/books').then(r => r.data);
